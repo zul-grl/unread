@@ -457,8 +457,8 @@ header {
   width: 6px;
 }
 .long {
-  max-width: 200px;
-  width: 90%;
+  /* max-width: 200px; */
+  width: 85%;
   margin-top: 4px;
   height: 4px;
   background-color: hsl(221, 100%, 48%);
@@ -634,14 +634,17 @@ header {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  font-size: 12.6px;
   max-width: 300px;
   max-height: 15px;
-  height: 100vh;
+  height: 100%;
+  position: relative;
 }
 .lead p {
   display: flex;
   align-items: center;
+  font-size: 12.6px;
+  position: absolute;
+  right: 0;
 }
 .meta {
   margin: 10px;
