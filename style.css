@@ -25,10 +25,13 @@ body {
 }
 .aside,
 .tower {
+  flex-grow: 1;
   max-width: 550px;
   max-height: 362px;
-  width: 46.4vw;
-  height: calc(46.4vw * 0.51);
+  /* width: 46.4vw; */
+  width: 100%;
+  /* height: calc(46.4vw * 0.51); */
+  aspect-ratio: 550/362;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
   transform-origin: center;
@@ -39,10 +42,12 @@ body {
 .tech-item2,
 .box-item1,
 .box-item2 {
-  max-width: 264px;
+  max-width: 265px;
   max-height: 234px;
-  width: 22.3vw;
-  height: calc(22.3vw * 0.9);
+  /* width: 22.3vw; */
+  width: 100%;
+  /* height: calc(22.3vw * 0.9); */
+  aspect-ratio: 264/234;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -53,8 +58,10 @@ body {
 .content-item2 {
   max-width: 265px;
   max-height: 272px;
-  width: 22.4vw;
-  height: calc(22.4vw * 0.85);
+  /* width: 22.4vw; */
+  /* height: calc(22.4vw * 0.85); */
+  width: 100%;
+  aspect-ratio: 265/272;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -64,26 +71,20 @@ body {
 .read {
   max-width: 265px;
   max-height: 324px;
-  width: 22.4vw;
-  height: calc(22.4vw * 1.1);
+  /* width: 22.4vw; */
+  /* height: calc(22.4vw * 1.1); */
+  width: 100%;
+  aspect-ratio: 265/324;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
 }
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.top {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.tech {
+.top,
+.bottom {
   display: flex;
   gap: 20px;
 }
+
 .tech-item1 {
   background-image: url(./talked.jpg);
   background-position: center;
@@ -93,15 +94,6 @@ body {
   background-image: url(./google\ drive.jpg);
   background-position: center;
   background-size: cover;
-}
-.aside2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.puzzle {
-  display: flex;
-  gap: 20px;
 }
 .puzzle-piece1 {
   background-image: url(./phone.png);
@@ -113,10 +105,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-.news {
-  display: flex;
-  gap: 20px;
-}
 .news-item1 {
   background-image: url(./mongolia.jpg);
   background-position: center;
@@ -127,78 +115,60 @@ body {
   background-position: center;
   background-size: cover;
 }
-.bottom {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 .tower {
   background-image: url(./tower.jpg);
   transform-origin: center;
   position: relative;
 }
-.box {
+.tech,
+.box,
+.news,
+.content,
+.puzzle {
   display: flex;
   gap: 20px;
 }
 .box-item1 {
   background-image: url(./520.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .box-item2 {
   background-image: url(./10.jpg);
-  background-position: center;
-  background-size: cover;
 }
-.content {
-  display: flex;
-  gap: 20px;
-}
+
 .content-item1 {
   background-image: url(./ted.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .content-item2 {
   background-image: url(./sub.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .read {
   background-image: url(./unread.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
 }
-.first {
+.first,
+.smart,
+.header,
+.aside2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-.smart {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  /* max-width: 548px; */
+  flex-grow: 1;
 }
 .aside,
 .tower,
 .read,
-.tech-item1,
-.tech-item2,
-.puzzle-piece1,
-.puzzle-piece2,
-.news-item1,
-.news-item2,
-.box-item1,
-.box-item2,
-.content-item1,
-.content-item2 {
+.tech div,
+.puzzle div,
+.news div,
+.box div,
+.content div {
   transition: 0.2s ease-in-out;
   transform-origin: center;
   cursor: pointer;
   display: flex;
   align-items: end;
+  background-position: center;
+  background-size: cover;
 }
 .aside:hover,
 .tower:hover,
@@ -227,7 +197,7 @@ body {
 }
 .card {
   height: 90px;
-  background-color: rgba(55, 55, 55, 0.43);
+  background-color: hwb(0 31% 69% / 0.43);
   backdrop-filter: blur(3px);
   width: 100%;
   display: flex;
@@ -240,7 +210,7 @@ body {
 }
 .card1 {
   height: 107px;
-  background-color: rgba(55, 55, 55, 0.43);
+  background-color: hwb(0 31% 69% / 0.43);
   backdrop-filter: blur(3px);
   width: 100%;
   display: flex;
@@ -457,7 +427,6 @@ header {
   width: 6px;
 }
 .long {
-  /* max-width: 200px; */
   width: 85%;
   margin-top: 4px;
   height: 4px;
@@ -604,9 +573,9 @@ header {
   justify-content: space-between;
   border-radius: 10px;
   padding: 13px 13px;
-  width: 13.5vw;
-  height: calc(14vw * 1.5);
-  /* max-height: 100vh; */
+  padding: 13px 13px;
+  width: calc((100% - 120px) / 5);
+  aspect-ratio: 293/433;
   cursor: pointer;
 }
 .scroll {
@@ -788,9 +757,6 @@ header {
 }
 .right,
 .left {
-  max-width: 739px;
-  width: 100vw;
-  height: calc(100vw * 0.3);
   margin-bottom: 44px;
 }
 .tab {

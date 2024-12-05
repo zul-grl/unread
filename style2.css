@@ -1,8 +1,8 @@
 @media only screen and (max-width: 1100px) {
   .scroll-card {
-    width: 17.6vw;
-    height: calc(18vw * 1.5);
-    max-height: 100vh;
+    padding: 13px 13px;
+    width: calc((100% - 60px) / 3);
+    aspect-ratio: 293/433;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -12,11 +12,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .scroll-card {
-    width: 29vw;
-    height: calc(29vw * 1.5);
-    max-height: 100vh;
-  }
   .meta {
     gap: 10px;
   }
@@ -33,11 +28,6 @@
   .bottom {
     display: flex;
     flex-wrap: wrap;
-  }
-  .scroll-card {
-    width: 29vw;
-    height: calc(29vw * 1.5);
-    max-height: 100vh;
   }
   .today .brand {
     width: 100%;
@@ -92,7 +82,7 @@
   }
   .aside,
   .tower {
-    max-width: 720px;
+    max-width: 700px;
     width: 100%;
     max-width: none;
     height: calc(100vw * 0.56);
@@ -146,9 +136,8 @@
     display: none;
   }
   .scroll-card {
-    width: 40vw;
-    height: calc(40vw * 1.5);
-    max-height: 100vh;
+    width: calc((100% - 30px) / 2);
+    aspect-ratio: 293/433;
   }
   .date {
     padding: 10px 10px;
@@ -168,11 +157,13 @@
   .news-item1,
   .news-item2,
   .read {
-    width: 100%;
+    /* flex-grow: 1; */
     max-width: none;
     max-width: 420px;
-    max-height: 276px;
-    height: calc(100vw * 0.7);
+    width: 100%;
+    /* max-height: 276px; */
+    /* height: calc(100vw * 0.7); */
+    aspect-ratio: 420/276;
   }
   .tech,
   .puzzle,
