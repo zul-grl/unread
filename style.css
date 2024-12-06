@@ -47,6 +47,7 @@ body {
 .box-item1,
 .box-item2 {
   max-width: 265px;
+  max-width: 265px;
   max-height: 234px;
   width: 100%;
   flex: 1;
@@ -83,9 +84,12 @@ body {
 }
 .top,
 .bottom {
+.top,
+.bottom {
   display: flex;
   gap: 20px;
 }
+
 
 .tech-item1 {
   background-image: url(./talked.jpg);
@@ -138,6 +142,7 @@ body {
   background-image: url(./10.jpg);
 }
 
+
 .content-item1 {
   background-image: url(./ted.jpg);
 }
@@ -147,6 +152,10 @@ body {
 .read1 {
   background-image: url(./unread.jpg);
 }
+.first,
+.smart,
+.header,
+.aside2 {
 .first,
 .smart,
 .header,
@@ -169,6 +178,8 @@ body {
   cursor: pointer;
   display: flex;
   align-items: end;
+  background-position: center;
+  background-size: cover;
   background-position: center;
   background-size: cover;
 }
@@ -200,6 +211,7 @@ body {
 .card {
   height: 90px;
   background-color: hwb(0 31% 69% / 0.43);
+  background-color: hwb(0 31% 69% / 0.43);
   backdrop-filter: blur(3px);
   width: 100%;
   display: flex;
@@ -212,6 +224,7 @@ body {
 }
 .card1 {
   height: 107px;
+  background-color: hwb(0 31% 69% / 0.43);
   background-color: hwb(0 31% 69% / 0.43);
   backdrop-filter: blur(3px);
   width: 100%;
@@ -576,6 +589,9 @@ header {
   justify-content: space-between;
   border-radius: 10px;
   padding: 13px 13px;
+  padding: 13px 13px;
+  width: calc((100% - 120px) / 5);
+  aspect-ratio: 293/433;
   padding: 13px 13px;
   width: calc((100% - 120px) / 5);
   aspect-ratio: 293/433;
