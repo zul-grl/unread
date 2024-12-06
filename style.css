@@ -84,8 +84,6 @@ body {
 }
 .top,
 .bottom {
-.top,
-.bottom {
   display: flex;
   gap: 20px;
 }
@@ -152,10 +150,6 @@ body {
 .read1 {
   background-image: url(./unread.jpg);
 }
-.first,
-.smart,
-.header,
-.aside2 {
 .first,
 .smart,
 .header,
@@ -848,7 +842,6 @@ header {
 }
 .footer-aside {
   max-width: 416.4px;
-  /* max-height: 404px; */
 }
 .footer-logo img {
   width: 134px;
@@ -921,7 +914,6 @@ header {
 }
 .footer-aside2 {
   max-width: 660px;
-  /* max-height: 700px; */
   padding-left: 50px;
   margin-left: 50px;
 }
