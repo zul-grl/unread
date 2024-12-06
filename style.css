@@ -832,7 +832,7 @@ header {
 }
 .footer-aside {
   max-width: 416.4px;
-  max-height: 404px;
+  /* max-height: 404px; */
 }
 .footer-logo img {
   width: 134px;
@@ -905,7 +905,7 @@ header {
 }
 .footer-aside2 {
   max-width: 660px;
-  max-height: 700px;
+  /* max-height: 700px; */
   padding-left: 50px;
   margin-left: 50px;
 }
@@ -926,10 +926,10 @@ header {
 }
 .table {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: start;
   margin-top: 46px;
-  max-width: 600px;
+  max-width: 800px;
 }
 .table h4 {
   color: #0078f6;

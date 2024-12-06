@@ -6,6 +6,10 @@
     width: calc((100% - 60px) / 3);
     aspect-ratio: 293/433;
   }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 800px) {
