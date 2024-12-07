@@ -88,7 +88,6 @@ body {
   gap: 20px;
 }
 
-
 .tech-item1 {
   background-image: url(./talked.jpg);
   background-position: center;
@@ -139,7 +138,6 @@ body {
 .box-item2 {
   background-image: url(./10.jpg);
 }
-
 
 .content-item1 {
   background-image: url(./ted.jpg);
@@ -724,9 +722,14 @@ header {
   overflow: hidden;
   justify-content: space-between;
   background-color: #fff;
-  box-shadow: 1px 0px 46px 1px rgba(112, 109, 109, 0.326);
+  /* border: 1px solid rgb(236, 236, 236); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.7s all;
+
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  /* box-shadow: 1px 0px 46px 1px rgba(112, 109, 109, 0.326);
   -webkit-box-shadow: 1px 0px 46px 1px rgba(112, 109, 109, 0.237);
-  -moz-box-shadow: 1px 0px 46px 1px rgba(112, 109, 109, 0.48);
+  -moz-box-shadow: 1px 0px 46px 1px rgba(112, 109, 109, 0.48); */
 }
 .date div {
   display: flex;
@@ -994,7 +997,8 @@ header {
   max-width: 700px;
 }
 .date:hover {
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.261);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.261); */
 }
 .scroll-card:hover {
   transform: scale(1.1);
@@ -1006,7 +1010,7 @@ header {
   fill: #475993;
 }
 .instagram:hover {
-  fill: rgb(201, 62, 118);
+  fill: url(#instagram-color);
 }
 .twitter:hover {
   fill: #1da2f2;
